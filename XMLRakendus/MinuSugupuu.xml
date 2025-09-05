@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<sugupuu>
+	<inimene synniaasta="1947">
+		<nimi>Ninna</nimi>
+		<synnikoht>Moskva</synnikoht>
+		<lapsed>
+			<inimene synniaasta="1988">
+				<nimi>Olga</nimi>
+				<lapsed>
+					<inimene synniaasta="2006">
+						<nimi>Veronika</nimi>
+					</inimene>
+				</lapsed>
+			</inimene>
+			<inimene synniaasta="1984">
+				<nimi>Julia</nimi>
+				<lapsed>
+					<inimene synniaasta="2012">
+						<nimi>Eva</nimi>
+					</inimene>
+					<inimene synniaasta="2016">
+						<nimi>Aria</nimi>
+					</inimene>
+					<inimene synniaasta="2022">
+						<nimi>Vladislav</nimi>
+					</inimene>
+				</lapsed>
+			</inimene>
+		</lapsed>
+	</inimene>
+
+	<inimene synniaasta="1946">
+		<nimi>Natalja</nimi>
+		<synnikoht>Postavi</synnikoht>
+		<lapsed>
+			<inimene synniaasta="1987">
+				<nimi>Vitali</nimi>
+			</inimene>
+			<inimene synniaasta="1985">
+				<nimi>Krestina</nimi>
+			</inimene>
+		</lapsed>
+	</inimene>
+
+	<inimene synniaasta="1948">
+		<nimi>Andrei</nimi>
+		<synnikoht>Moskva</synnikoht>
+	</inimene>
+
+	<inimene synniaasta="1983">
+		<nimi>Evgeni</nimi>
+		<synnikoht>Tallinn</synnikoht>
+	</inimene>
+</sugupuu>
