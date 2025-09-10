@@ -1,27 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8"?>
 <sugupuu>
-	<inimene synniaasta="1947">
+	<inimene synniaasta="1947" elukoht="Moskva">
 		<nimi>Ninna</nimi>
-		<synnikoht>Moskva</synnikoht>
 		<lapsed>
-			<inimene synniaasta="1988">
+			<inimene synniaasta="1988" elukoht="Tallinn">
 				<nimi>Olga</nimi>
 				<lapsed>
-					<inimene synniaasta="2006">
+					<inimene synniaasta="2006" elukoht="Tallinn">
 						<nimi>Veronika</nimi>
 					</inimene>
 				</lapsed>
 			</inimene>
-			<inimene synniaasta="1984">
+			<inimene synniaasta="1984" elukoht="Tallinn">
 				<nimi>Julia</nimi>
 				<lapsed>
-					<inimene synniaasta="2012">
+					<inimene synniaasta="2012" elukoht="Tallinn">
 						<nimi>Eva</nimi>
 					</inimene>
-					<inimene synniaasta="2016">
+					<inimene synniaasta="2016" elukoht="Tallinn">
 						<nimi>Aria</nimi>
 					</inimene>
-					<inimene synniaasta="2022">
+					<inimene synniaasta="2022" elukoht="Tallinn">
 						<nimi>Vladislav</nimi>
 					</inimene>
 				</lapsed>
@@ -29,26 +28,23 @@
 		</lapsed>
 	</inimene>
 
-	<inimene synniaasta="1946">
+	<inimene synniaasta="1946" elukoht="Postavi">
 		<nimi>Natalja</nimi>
-		<synnikoht>Postavi</synnikoht>
 		<lapsed>
-			<inimene synniaasta="1987">
+			<inimene synniaasta="1987" elukoht="Tallinn">
 				<nimi>Vitali</nimi>
 			</inimene>
-			<inimene synniaasta="1985">
+			<inimene synniaasta="1985" elukoht="Tallinn">
 				<nimi>Krestina</nimi>
 			</inimene>
 		</lapsed>
 	</inimene>
 
-	<inimene synniaasta="1948">
+	<inimene synniaasta="1948" elukoht="Moskva">
 		<nimi>Andrei</nimi>
-		<synnikoht>Moskva</synnikoht>
 	</inimene>
 
-	<inimene synniaasta="1983">
+	<inimene synniaasta="1983" elukoht="Tallinn">
 		<nimi>Evgeni</nimi>
-		<synnikoht>Tallinn</synnikoht>
 	</inimene>
 </sugupuu>
