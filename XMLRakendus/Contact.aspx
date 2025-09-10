@@ -1,8 +1,8 @@
-﻿<%@ Page Title="Contact" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.vb" Inherits="XMLRakendus.Contact" %>
+<%@ Page Title="Oma ylesanne" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.vb" Inherits="XMLRakendus.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
      <main>
-     <h1>XML katsetamine: Elizaveta II sugupuu</h1>
+     <h1>XML katsetamine: Minu sugupuu</h1>
 
      <div>
          <asp:Xml runat="server"
