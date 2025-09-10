@@ -5,3 +5,7 @@
 - Arvutatud kõige populaarsem elukoht ja selle esiletõstmine tabelis.
 - Vanemate sorteerimine sünniaasta järgi kasvavas järjekorras.
 - Nime välja punane värv, kui nimel on täht "a".
+
+
+ ![Скриншот](screenshot.png)
+
