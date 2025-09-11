@@ -6,8 +6,19 @@
 	<xsl:template match="/">
 		<xsl:variable name="koigePopulaarsemLinn">
 			<xsl:for-each select="//inimene[not(@elukoht = preceding::inimene/@elukoht)]">
+				<!--soorterime kõik inimesed atribuutiga (elukoht) , iga linna puhul loendame, mitu korda see esineb ja valime linn mis on kõige populaarsem -->
+				<!--preceding::inimene tähendab kõiki eelnevaid elemente -->
+				<!--inimene/@elukoht on atribuut, kus valitakse inimese elukoht -->
+				<!--not(@elukoht) kontrollib, kas praegune elukoht on eelmiste seas unikaalne. -->
 				<xsl:sort select="count(//inimene[@elukoht = current()/@elukoht])" data-type="number" order="descending"/>
+				<!--inimene valitab kõik inimesed -->
+				<!--[@elukoht = current()/@elukoht] valin ainult need "inimene" elementid, mille elukoht atribuudi väärtus-->
+				<!--count usub -->
+				<!--order="descending" määrab sortimisjärjestuse -->
+				<!--current() töödeldav element -->
+				<!--Sorteerime "inimene" elemente sama linna elanike arvu järgi. -->
 				<xsl:if test="position() = 1">
+				<!--võimaldab valida elemendi, millel on maksimaalne väärtus -->
 					<xsl:value-of select="@elukoht"/>
 				</xsl:if>
 			</xsl:for-each>
@@ -27,6 +38,7 @@
 			</tr>
 
 			<xsl:apply-templates select="//inimene[lapsed/inimene]">
+				<!--valime ainult need inimesed, kellel on lapsed -->
 				<xsl:sort select="@synniaasta" data-type="number" order="ascending"/>
 			</xsl:apply-templates>
 		</table>
@@ -38,6 +50,7 @@
 		</p>
 	</xsl:template>
 	<xsl:template match="inimene">
+		<!--match näitab millistele XML-i osadele seda malli rakendada -->
 		<xsl:variable name="lasteArv" select="count(lapsed/inimene)"/>
 		<xsl:variable name="koigePopulaarsemLinn">
 			<xsl:for-each select="//inimene[not(@elukoht = preceding::inimene/@elukoht)]">
@@ -50,6 +63,7 @@
 
 		<tr>
 			<xsl:if test="$lasteArv &gt;= 2">
+				<!--&gt onsuurem või võrdne -->
 				<xsl:attribute name="style">background-color: yellow;</xsl:attribute>
 			</xsl:if>
 			<td>
@@ -83,6 +97,7 @@
 				<xsl:for-each select="lapsed/inimene">
 					<xsl:value-of select="nimi"/>
 					<xsl:if test="position() != last()">, </xsl:if>
+					<!-- != last() tähendab, et lõppuks ei tule koma -->
 				</xsl:for-each>
 			</td>
 			<td>
